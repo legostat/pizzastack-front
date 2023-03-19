@@ -8,7 +8,7 @@ export const Footer = () => {
           Контакти
         </h3>
         <ul className="">
-          <FooterLink href="tel:+380441234567">044 123 45 67</FooterLink>
+          <FooterLink href="tel:+380571234567">057 123 45 67</FooterLink>
           <FooterLink href="mailto:info@pizzastack.app">
             info@pizzastack.app
           </FooterLink>
