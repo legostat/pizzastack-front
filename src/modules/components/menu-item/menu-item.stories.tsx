@@ -1,7 +1,6 @@
-import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { MenuItem } from "./menu-item.component";
+import { MenuItem } from "@app/modules/components/menu-item/menu-item.component";
 
 export default {
   title: "Menu/MenuItem",

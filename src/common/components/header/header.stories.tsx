@@ -1,11 +1,10 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Header } from './header.component';
+import { Header } from "@app/common/components/header/header.component";
 
 export default {
-  title: 'Common/Header',
-  component: Header,  
+  title: "Common/Header",
+  component: Header,
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = () => <Header />;

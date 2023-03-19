@@ -1,6 +1,6 @@
-import { MenuItem } from "@app/modules/components/menu-item/menu-item.component";
-import { Pizza } from "@app/modules/types/pizza";
 import { FC } from "react";
+import { Pizza } from "@app/modules/types/pizza";
+import { MenuItem } from "@app/modules/components/menu-item/menu-item.component";
 
 interface MenuListProps {
   items: Pizza[];

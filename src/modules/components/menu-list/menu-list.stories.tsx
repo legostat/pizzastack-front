@@ -1,9 +1,7 @@
-import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import pizzaMenu from "@app/mocks/pizza.json";
-
-import { MenuList } from "./menu-list.component";
+import { MenuList } from "@app/modules/components/menu-list/menu-list.component";
 
 export default {
   title: "Menu/Menu List",
