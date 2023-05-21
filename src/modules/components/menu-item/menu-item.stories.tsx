@@ -21,7 +21,7 @@ const Template: ComponentStory<typeof MenuItem> = (args) => (
 export const View = Template.bind({});
 
 View.args = {
-  imagePath: "/assets/pizza/manhattan.jpeg",
+  imageId: "menu/bmcejh17iyjtayonsgqh",
   weight: 500,
   title: "Піца Мангеттен",
   ingredients:

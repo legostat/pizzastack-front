@@ -1,7 +1,9 @@
 import { FC } from "react";
+import { cloudinary } from "@app/core/cloudinary";
+import { AdvancedImage } from "@cloudinary/react";
 
 interface MenuItemsProps {
-  imagePath: string;
+  imageId: string;
   weight: number;
   title: string;
   ingredients: string;
@@ -9,19 +11,22 @@ interface MenuItemsProps {
 }
 
 export const MenuItem: FC<MenuItemsProps> = ({
-  imagePath,
+  imageId,
   weight,
   title,
   ingredients,
   price,
 }) => {
+  const image = cloudinary.image(imageId);
+  image.addTransformation("w_384,h_240,dpr_2.0");
+
   return (
     <div className="shadow-xl rounded-2xl bg-white">
       <div className="relative">
-        <img
-          className="object-cover object-center h-60 w-full rounded-t-2xl"
-          src={imagePath}
+        <AdvancedImage
+          cldImg={image}
           alt={title}
+          className="object-cover object-center h-60 w-full rounded-t-2xl"
         />
         <span className="absolute bottom-1.5 right-3 text-white text-sm rounded-[2rem] px-2 py-px bg-gray-900/50">
           {weight} г
